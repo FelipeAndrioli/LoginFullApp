@@ -2,7 +2,11 @@ import React from 'react'
 import{ UserInputStyle, PassInputStyle, InputContainer, LoginButton } from './style'
 
 function Login() {
-    
+
+    function handleLogin(e) {
+        console.log('Login function working!')
+    }
+
     return(
         <>
             <InputContainer>

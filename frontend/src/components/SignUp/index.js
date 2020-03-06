@@ -3,6 +3,10 @@ import { InputContainer, SignUpButton, FirstNameInput, LastNameInput,  PassSignI
 
 function SignUp() {
 
+    function handleSignUp(e) {
+        console.log('Sign Up function!')
+    }
+
     return(
         <>
             <InputContainer>
@@ -11,7 +15,7 @@ function SignUp() {
                 <EmailSignIn placeholder = "Email" />
                 <PassSignIn placeholder = "Password" type = "password" />
             </InputContainer>
-            <SignUpButton>Sign Up</SignUpButton>
+            <SignUpButton onClick = {handleSignUp} >Sign Up</SignUpButton>
         </>
     )
 }
