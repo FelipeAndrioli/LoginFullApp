@@ -1,12 +1,14 @@
 import React from 'react';
 import GlobalStyle from './style/global'
 import MainContainer from './components/MainContainer'
+import Login from './components/Login'
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle /> 
       <MainContainer />
+      
     </div>
   );
 }

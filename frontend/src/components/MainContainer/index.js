@@ -1,18 +1,20 @@
 import React from 'react'
-import{ MainContainerStyle, LoginStyle, RegisterStyle, UserInputStyle, PassInputStyle, InputContainer, LoginButton } from './style'
+import Login from '../Login'
+import SignUp from '../SignUp'
+import{ MainContainerStyle, LoginStyle, RegisterStyle } from './style'
 
 function MainContainer() {
+
+    function toggleFunction() {
+
+    }
 
     return (
         <>
             <MainContainerStyle>
                 <LoginStyle>Login</LoginStyle>
-                <RegisterStyle>Register</RegisterStyle>
-                <InputContainer>
-                    <UserInputStyle placeholder = "Username"></UserInputStyle>
-                    <PassInputStyle type = "password" placeholder = "Password"></PassInputStyle>
-                </InputContainer>
-                <LoginButton>Login</LoginButton>
+                <RegisterStyle>Sign Up</RegisterStyle>
+                <SignUp />
             </MainContainerStyle>
         </>
     )
