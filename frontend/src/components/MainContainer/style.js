@@ -23,22 +23,28 @@ export const LoginStyle = styled.button`
     align-items: center;
     height: 70px;
     width: 50%;
-    background: ${colors.unselectedButton};
+    background: ${props => props.state ? colors.selectedButton : colors.unselectedButton};
     margin: 0;
     outline: 0;
     border: 0;
     color: ${colors.letters};
     font-size: 25px;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.85
+    }
 `
 
+
+//background: ${colors.selectedButton};
 export const RegisterStyle = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
     width: 50%;
-    background: ${colors.selectedButton};
+    background: ${props => props.state == false ? colors.selectedButton : colors.unselectedButton};
     text-align: center;
     margin: 0;
     outline: 0;
@@ -46,4 +52,8 @@ export const RegisterStyle = styled.button`
     color: ${colors.letters};
     font-size: 25px;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.85
+    }
 ` 

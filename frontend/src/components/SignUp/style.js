@@ -106,4 +106,8 @@ export const SignUpButton = styled.button`
     color: ${colors.letters};
     font-size: 25px;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.85
+    }
 `

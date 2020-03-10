@@ -71,7 +71,7 @@ export const UserInputStyle = styled.input`
 
     &&::placeholder {
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         color: ${colors.letters};
     }
 `
@@ -93,7 +93,7 @@ export const PassInputStyle = styled.input`
 
     &&::placeholder {
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         color: ${colors.letters};
     }
 `
@@ -110,4 +110,8 @@ export const LoginButton = styled.button`
     color: ${colors.letters};
     font-size: 25px;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.85
+    }
 `
