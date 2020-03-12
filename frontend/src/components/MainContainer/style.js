@@ -23,7 +23,7 @@ export const LoginStyle = styled.button`
     align-items: center;
     height: 70px;
     width: 50%;
-    background: ${props => props.state ? colors.selectedButton : colors.unselectedButton};
+    background: ${props => props.$state ? colors.selectedButton : colors.unselectedButton};
     margin: 0;
     outline: 0;
     border: 0;
@@ -36,7 +36,6 @@ export const LoginStyle = styled.button`
     }
 `
 
-
 //background: ${colors.selectedButton};
 export const RegisterStyle = styled.button`
     display: flex;
@@ -44,7 +43,7 @@ export const RegisterStyle = styled.button`
     align-items: center;
     height: 70px;
     width: 50%;
-    background: ${props => props.state == false ? colors.selectedButton : colors.unselectedButton};
+    background: ${props => props.$state ? colors.unselectedButton : colors.selectedButton};
     text-align: center;
     margin: 0;
     outline: 0;

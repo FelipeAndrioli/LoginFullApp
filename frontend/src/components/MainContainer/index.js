@@ -17,22 +17,11 @@ function MainContainer() {
     }, [state])
 */
 
-    function handleLoginClick(e) {
-        console.log('Login Working!')
-        setState(true)
-    }
-
-    function handleSignInClick(e) {
-        console.log('Sign In working!')
-        setState(false)
-    }
-
     return (
         <>
-
             <MainContainerStyle>
-                <LoginStyle onClick = {handleLoginClick} >Login</LoginStyle>
-                <RegisterStyle onClick = {handleSignInClick} >Sign Up</RegisterStyle>
+                <LoginStyle $state = {state} onClick = { () => setState(true) } >Login</LoginStyle>
+                <RegisterStyle $state = {state} onClick = { () => setState(false) } >Sign Up</RegisterStyle>
                 {state ? <Login /> : <SignUp />}
             </MainContainerStyle>
         </>
