@@ -66,7 +66,7 @@ export const UserInputStyle = styled.input`
     border-right: 0;
     border-bottom: 1;
     border-color: ${colors.borderColor};
-    font-size: 20px;
+    font-size: 25px;
     color: ${colors.letters};
 
     &&::placeholder {
@@ -88,7 +88,7 @@ export const PassInputStyle = styled.input`
     border-right: 0;
     border-bottom: 1;
     border-color: ${colors.borderColor};
-    font-size: 20px;
+    font-size: 25px;
     color: ${colors.letters};
 
     &&::placeholder {
