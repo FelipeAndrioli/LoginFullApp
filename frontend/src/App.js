@@ -8,9 +8,16 @@ function App() {
     <div className="App">
       <GlobalStyle /> 
       <MainContainer />
-      
     </div>
   );
 }
 
 export default App;
+
+/**
+ * 
+ * TODO
+ * 
+ * Begin backend part of the project
+ * 
+ */

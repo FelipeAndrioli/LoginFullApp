@@ -7,16 +7,6 @@ function MainContainer() {
 
     const [state, setState] = useState(true)
 
-/*
-    useEffect(() => {
-        if(this.state == 'Login') {
-            <Login />
-        } else if(this.state == 'SignUp') {
-            <SignUp />
-        }
-    }, [state])
-*/
-
     return (
         <>
             <MainContainerStyle>
